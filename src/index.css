@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "EyesForSerifs";
+  src: url("/fonts/eyesforserifs-regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --font-eyes: "EyesForSerifs", serif;
+  }
+}
+
+@layer utilities {
+  .font-eyes {
+    font-family: var(--font-eyes);
+  }
+}
