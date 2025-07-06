@@ -4,9 +4,9 @@ import { MapPinIcon } from "@heroicons/react/16/solid";
 
 export const Hero: FC = () => {
   return (
-    <section className="w-full py-40 flex items-center justify-center">
-      <div className="flex flex-col gap-y-6 max-w-[640px]">
-        <div className="text-7xl font-eyes">
+    <section className="w-full py-20 md:py-40 flex items-center justify-center">
+      <div className="flex flex-col gap-y-6 w-full px-10 md:px-20 lg:px-32 max-w-[896px]">
+        <div className="text-5xl md:text-7xl font-eyes">
           Hey there, I'm Oli — Product Designer who loves to experiment to make
           things better.
         </div>
@@ -15,7 +15,7 @@ export const Hero: FC = () => {
             <img src={availableIcon} alt="Available icon" />
             <span>Currently looking for the next challenge</span>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center min-w-[100px]">
             <MapPinIcon className="w-5" />
             <span>Lima, Peru</span>
           </div>

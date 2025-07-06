@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 export const Header: FC = () => {
   return (
-    <header className="w-full h-20 flex items-center justify-end pr-32">
+    <header className="w-full h-20 flex items-center justify-end pr-10 sm:pr-20 lg:pr-32">
       <div className="flex items-center gap-x-4 group">
         <HeaderLink href="/">Work</HeaderLink>
         <HeaderLink href="/about">About</HeaderLink>
