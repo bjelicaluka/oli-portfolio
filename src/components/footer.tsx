@@ -20,7 +20,7 @@ export const Footer: FC = () => {
     : DocumentDuplicateIconOutline;
 
   return (
-    <footer className="w-full flex items-center justify-center my-40">
+    <footer className="w-full flex items-center justify-center my-20 lg:my-40">
       <div className="flex flex-col items-center gap-10">
         <h1 className="text-5xl font-bold font-eyes text-center">Thanks for stopping by</h1>
         <div className="pt-5 text-gray-600 dark:text-gray-400">Let's find time to chat</div>

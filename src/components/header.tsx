@@ -1,4 +1,5 @@
 import type { FC, PropsWithChildren } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 export const Header: FC = () => {
@@ -17,19 +18,15 @@ const HeaderLink: FC<
     href: string;
   }>
 > = ({ children, href }) => {
-  const finalHref = `${import.meta.env.BASE_URL}${href}`.replaceAll(
-    /\/\//g,
-    "/"
-  );
+  const location = useLocation();
 
   // remove trailing slash for comparison
   const selected =
-    finalHref.replace(/\/$/, "") ===
-    window.location.pathname.replace(/\/$/, "");
+    href.replace(/\/$/, "") === location.pathname.replace(/\/$/, "");
 
   return (
-    <a
-      href={finalHref}
+    <Link
+      to={href}
       className={twMerge(
         "relative inline-block px-2 py-1 font-medium",
         "after:absolute after:left-2 after:bottom-0 after:h-1 after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 after:ease-out hover:after:scale-x-120 focus-visible:after:scale-x-120",
@@ -37,6 +34,6 @@ const HeaderLink: FC<
       )}
     >
       {children}
-    </a>
+    </Link>
   );
 };
