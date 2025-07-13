@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 export const Quotes: FC = () => {
   return (
-    <section className="w-full gap-y-5 flex flex-col items-center justify-center my-20 px-20 lg:px-0">
+    <section className="w-full gap-y-5 flex flex-col items-center justify-center mb-20 px-20 lg:px-0">
       <svg
         width="52"
         height="42"

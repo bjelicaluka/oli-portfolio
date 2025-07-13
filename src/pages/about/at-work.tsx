@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 export const AtWork: FC = () => {
   return (
-    <section className="w-full">
+    <section className="w-full mb-20">
       <div className="w-full px-20 lg:px-0 lg:w-1/2 flex items-center justify-center lg:justify-end">
         <div className="text-right flex flex-col items-end gap-y-4 max-w-[500px]">
           <div className="text-4xl lg:text-5xl font-eyes">At work</div>
