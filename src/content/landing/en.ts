@@ -10,7 +10,6 @@ const content: LandingContent = {
   hero: {
     title:
       "Hey there, I'm Oli — Product Designer who loves to experiment to make things better.",
-    subtitle: "Currently looking for the next challenge",
     location: "Lima, Peru",
   },
   projects: {

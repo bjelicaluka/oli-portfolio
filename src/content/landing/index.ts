@@ -4,7 +4,6 @@ import es from "./es";
 export type LandingContent = {
   hero: {
     title: string;
-    subtitle: string;
     location: string;
   };
   projects: {
