@@ -5,7 +5,7 @@ const content: AboutContent = {
     title: "Who I am",
   },
   atWork: {
-    title: "At HOLA",
+    title: "At TEST",
     sections: [
       "Over the years the 7 years in my career, I've designed products in all kinds of setups — from being the only designer in the room to working in structured teams.",
       "I've shipped in environments with rigorous approval processes with quarterly releases, and others where things went live weekly.",
