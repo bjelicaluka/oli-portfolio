@@ -7,13 +7,15 @@ import { Quotes } from "./quotes";
 import { InLife } from "./in-life";
 import { Experience } from "./experience";
 
+const SHOW_QUOTES = false;
+
 export const AboutPage: FC = () => {
   return (
     <>
       <Header />
       <Hero />
       <AtWork />
-      <Quotes />
+      {SHOW_QUOTES && <Quotes />}
       <InLife />
       <Experience />
       <Footer />
