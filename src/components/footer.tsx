@@ -3,14 +3,17 @@ import { DocumentDuplicateIcon as DocumentDuplicateIconOutline } from "@heroicon
 import { DocumentDuplicateIcon as DocumentDuplicateIconSolid } from "@heroicons/react/24/solid";
 import { twMerge } from "tailwind-merge";
 import copy from "copy-to-clipboard";
-
-const EMAIL = "oliver.uriartf@gmail.com";
+import { useContent } from "../content-provider";
 
 export const Footer: FC = () => {
+  const {
+    footer: { title, subtitle, email },
+  } = useContent();
+
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
-    copy(EMAIL);
+    copy(email);
     setCopied(true);
     setTimeout(() => setCopied(false), 3000);
   };
@@ -22,13 +25,13 @@ export const Footer: FC = () => {
   return (
     <footer className="w-full flex items-center justify-center my-20 lg:my-40">
       <div className="flex flex-col items-center gap-10">
-        <h1 className="text-5xl font-bold font-eyes text-center">Thanks for stopping by</h1>
-        <div className="pt-5 text-gray-600 dark:text-gray-400">Let's find time to chat</div>
+        <h1 className="text-5xl font-bold font-eyes text-center">{title}</h1>
+        <div className="pt-5 text-gray-600 dark:text-gray-400">{subtitle}</div>
         <button
           className="relative font-bold flex items-center gap-x-2 cursor-pointer"
           onClick={handleCopyEmail}
         >
-          <span>{EMAIL}</span>
+          <span>{email}</span>
           <Icon className="w-5 h-5" />
 
           {/* TOOLTIP WHEN COPIED */}

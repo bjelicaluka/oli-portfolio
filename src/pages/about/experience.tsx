@@ -1,48 +1,13 @@
 import type { FC } from "react";
-
-const sections = [
-  {
-    title: "Experience",
-    items: [
-      {
-        title: "Building Swell - Product Designer",
-        date: "2022 - Present  |  United States (remote)",
-        description:
-          "Sole designer of a fast and user-driven team of X members. Established the design system, drove the creation of zero to one products, learning and iterating fast. The goal: make prefab shops life easier.",
-      },
-      {
-        title: "Scotiabank Peru — Product Designer",
-        date: "2019 - 2022  |  Peru",
-        description:
-          "Part of a great team of designers, researchers and service designers. Worked on the first web experience for the bank, digitizing different only-branch capabilities, information architecture redesign, and investments.",
-      },
-      {
-        title: "Glass Design — Product Designer",
-        date: "2018 - 2019  |  Peru",
-        description:
-          "Sole designer of a fast and user-driven team of X members. Established the design system, drove the creation of zero to one products, learning and iterating fast. The goal: make prefab shops life easier.",
-      },
-      {
-        title: "Urbaner — UX Designer",
-        date: "2018  |  Peru",
-        description:
-          "Sole designer. Focused on constant improvements for web and app.",
-      },
-    ],
-  },
-  {
-    title: "Education",
-    items: [
-      {
-        title: "San Martin de Porres University",
-        date: "2018  |  Peru",
-        description: "Bachelor’s Degree in Communication Science",
-      },
-    ],
-  },
-];
+import { useContent } from "../../content-provider";
 
 export const Experience: FC = () => {
+  const {
+    about: {
+      experience: { sections },
+    },
+  } = useContent();
+
   return (
     <section className="w-full py-10 lg:py-20 flex flex-col lg:flex-row gap-y-20 items-start justify-center">
       {sections.map((section, index) => (

@@ -4,7 +4,9 @@ import { useContent } from "../../content-provider";
 
 export const Hero: FC = () => {
   const {
-    hero: { title, location },
+    landing: {
+      hero: { title, location },
+    },
   } = useContent();
 
   return (

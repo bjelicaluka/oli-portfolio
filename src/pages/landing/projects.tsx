@@ -4,7 +4,9 @@ import { useContent } from "../../content-provider";
 
 export const Projects: FC = () => {
   const {
-    projects: { title, projects },
+    landing: {
+      projects: { title, projects },
+    },
   } = useContent();
 
   return (

@@ -1,6 +1,13 @@
 import type { FC } from "react";
+import { useContent } from "../../content-provider";
 
 export const Quotes: FC = () => {
+  const {
+    about: {
+      quotes: { quote, person },
+    },
+  } = useContent();
+
   return (
     <section className="w-full gap-y-5 flex flex-col items-center justify-center mb-20 px-20 lg:px-0">
       <svg
@@ -16,14 +23,9 @@ export const Quotes: FC = () => {
         />
       </svg>
 
-      <div className="max-w-5xl text-center italic text-2xl mt-5">
-        Working with him was like pairing with a Swiss Army knife — sharp,
-        adaptable, and somehow always calm under pressure
-      </div>
+      <div className="max-w-5xl text-center italic text-2xl mt-5">{quote}</div>
 
-      <div className="text-gray-600 dark:text-gray-300">
-        - Jordan Easterling, CEO at Building Swell
-      </div>
+      <div className="text-gray-600 dark:text-gray-300">{person}</div>
     </section>
   );
 };

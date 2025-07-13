@@ -1,9 +1,16 @@
 import type { FC } from "react";
 import backgroundImage from "/images/in-life.png";
 import { useThemePreference } from "../../util/theme-preference";
+import { useContent } from "../../content-provider";
 
 export const InLife: FC = () => {
   const { isDarkMode } = useThemePreference();
+
+  const {
+    about: {
+      inLife: { title, sections },
+    },
+  } = useContent();
 
   return (
     <section
@@ -19,17 +26,11 @@ export const InLife: FC = () => {
     >
       <div className="w-full mx-20 lg:mx-0 lg:w-1/2 flex items-center justify-center">
         <div className="text-left flex flex-col items-start gap-y-4 max-w-[500px]">
-          <div className="text-4xl lg:text-5xl font-eyes">In life</div>
+          <div className="text-4xl lg:text-5xl font-eyes">{title}</div>
 
-          <div>
-            I love making silly jokes just to see people laugh. A good weekend
-            means video games with my girlfriend while my dog chews on a bone.
-          </div>
-
-          <div>
-            I'm also into football, love a good trip with friends, and recently
-            started Muay Thai — so far, it's feeling pretty good.
-          </div>
+          {sections.map((section, i) => (
+            <div key={i}>{section}</div>
+          ))}
         </div>
       </div>
     </section>
