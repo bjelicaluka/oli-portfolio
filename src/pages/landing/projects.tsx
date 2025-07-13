@@ -1,73 +1,16 @@
 import type { FC } from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-
-import weldingImage from "/images/welding.png";
-import deliveryImage from "/images/delivery.png";
-import architectureImage from "/images/architecture.png";
-import abstractImage from "/images/abstract.png";
-import dogImage from "/images/dog.png";
-
-type Project = {
-  title: string;
-  description: string;
-  image: string;
-  projectURL: string;
-  company: string;
-};
-
-const projects: Project[] = [
-  {
-    title: "From chaos to clarity on the shop floor",
-    description:
-      "I led the design of a flexible production tracking module that brought clarity to busy prefab shop floors. Designed for more than 30 shop leads and operators across shops, the solution became a daily habit, with over 80% of targeted customers using it consistently.",
-    image: weldingImage,
-    projectURL:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchangelog.com%2Fnews%2Fmake-memes-anywhere-you-can-type-a-url-wgR&psig=AOvVaw0QKsVCrLKiTlsHX6CLiGY7&ust=1751890940508000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi97rucqI4DFQAAAAAdAAAAABAE",
-    company: "Building Swell — US & Canada",
-  },
-  {
-    title: "Delivery made simple and other title",
-    description:
-      "I led the design of a flexible production tracking module that brought clarity to busy prefab shop floors. Designed for more than 30 shop leads and operators across shops, the solution became a daily habit, with over 80% of targeted customers using it consistently.",
-    image: deliveryImage,
-    projectURL:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchangelog.com%2Fnews%2Fmake-memes-anywhere-you-can-type-a-url-wgR&psig=AOvVaw0QKsVCrLKiTlsHX6CLiGY7&ust=1751890940508000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi97rucqI4DFQAAAAAdAAAAABAE",
-    company: "Building Swell — US & Canada",
-  },
-  {
-    title: "Architecture Information redesign",
-    description:
-      "I led the design of a flexible production tracking module that brought clarity to busy prefab shop floors. Designed for more than 30 shop leads and operators across shops, the solution became a daily habit, with over 80% of targeted customers using it consistently.",
-    image: architectureImage,
-    projectURL:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchangelog.com%2Fnews%2Fmake-memes-anywhere-you-can-type-a-url-wgR&psig=AOvVaw0QKsVCrLKiTlsHX6CLiGY7&ust=1751890940508000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi97rucqI4DFQAAAAAdAAAAABAE",
-    company: "Building Swell — US & Canada",
-  },
-  {
-    title: "Tracking Phases and other stuff",
-    description:
-      "I led the design of a flexible production tracking module that brought clarity to busy prefab shop floors. Designed for more than 30 shop leads and operators across shops, the solution became a daily habit, with over 80% of targeted customers using it consistently.",
-    image: abstractImage,
-    projectURL:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchangelog.com%2Fnews%2Fmake-memes-anywhere-you-can-type-a-url-wgR&psig=AOvVaw0QKsVCrLKiTlsHX6CLiGY7&ust=1751890940508000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi97rucqI4DFQAAAAAdAAAAABAE",
-    company: "Building Swell — US & Canada",
-  },
-  {
-    title: "Dog Island",
-    description:
-      "I led the design of a flexible production tracking module that brought clarity to busy prefab shop floors. Designed for more than 30 shop leads and operators across shops, the solution became a daily habit, with over 80% of targeted customers using it consistently.",
-    image: dogImage,
-    projectURL:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchangelog.com%2Fnews%2Fmake-memes-anywhere-you-can-type-a-url-wgR&psig=AOvVaw0QKsVCrLKiTlsHX6CLiGY7&ust=1751890940508000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi97rucqI4DFQAAAAAdAAAAABAE",
-    company: "Building Swell — US & Canada",
-  },
-];
+import { useContent } from "../../content-provider";
 
 export const Projects: FC = () => {
+  const {
+    projects: { title, projects },
+  } = useContent();
+
   return (
     <section className="w-full flex flex-col">
       <h2 className="w-full px-10 md:px-20 lg:px-32 text-5xl my-10 font-eyes">
-        What I do
+        {title}
       </h2>
 
       <div className="flex flex-col gap-y-40">
