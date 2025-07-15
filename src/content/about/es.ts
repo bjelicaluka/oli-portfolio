@@ -7,9 +7,9 @@ const content: AboutContent = {
   atWork: {
     title: "At TEST",
     sections: [
-      "Over the years the 7 years in my career, I've designed products in all kinds of setups — from being the only designer in the room to working in structured teams.",
-      "I've shipped in environments with rigorous approval processes with quarterly releases, and others where things went live weekly.",
-      "These contrasts taught me how to adapt quickly, ask the right questions, and stay focused on what really matters: designing things that help people.",
+      "En mis 7 años como diseñador de producto, he formado parte de entornos muy distintos — desde ser el único diseñador en la sala hasta colaborar con un equipo de más de 20 personas.",
+      "He trabajado con procesos de aprobación estructurados y lanzamientos trimestrales, y también en equipos donde se publicaba a producción cada semana.",
+      "Estos contrastes me enseñaron a adaptarme rápido, hacer las preguntas correctas y enfocarme en lo que realmente importa: crear cosas que ayuden a las personas.",
     ],
   },
   quotes: {
@@ -18,50 +18,50 @@ const content: AboutContent = {
     person: "- Jordan Easterling, CEO at Building Swell",
   },
   inLife: {
-    title: "In life",
+    title: "En la vida",
     sections: [
-      "I love making silly jokes just to see people laugh. A good weekend means video games with my girlfriend while my dog chews on a bone.",
-      "I'm also into football, love a good trip with friends, and recently started Muay Thai — so far, it's feeling pretty good.",
+      "Me gusta hacer bromas para hacer reír a los demás. Para mí, un buen fin de semana es jugar videojuegos con mi novia mientras mi perro disfruta de un buen hueso.",
+      "También me gusta el fútbol, los viajes con amigos, y hace poco empecé a practicar Muay Thai — hasta ahora, va bastante bien.",
     ],
   },
   experience: {
     sections: [
       {
-        title: "Experience",
+        title: "Experiencia",
         items: [
           {
             title: "Building Swell - Product Designer",
-            date: "2022 - Present  |  United States (remote)",
+            date: "2022 - Presente  |  Estados Unidos (remoto)",
             description:
-              "Sole designer of a fast and user-driven team of X members. Established the design system, drove the creation of zero to one products, learning and iterating fast. The goal: make prefab shops life easier.",
+              "Único diseñador en un equipo ágil y enfocado en los usuarios, conformado por 9 personas. Construí el sistema de diseño desde cero y lideré la creación de productos completamente nuevos, aprendiendo e iterando rápidamente en el camino. El objetivo: hacerle la vida más fácil a las plantas de prefabricados.",
           },
           {
             title: "Scotiabank Peru — Product Designer",
-            date: "2019 - 2022  |  Peru",
+            date: "2019 - 2022  |  Perú",
             description:
-              "Part of a great team of designers, researchers and service designers. Worked on the first web experience for the bank, digitizing different only-branch capabilities, information architecture redesign, and investments.",
+              "Formé parte de un equipo multidisciplinario de más de 20 diseñadores, investigadores y diseñadores de servicios en un banco que atiende a más de 1.3 millones de clientes en Perú. Mi enfoque estuvo en digitalizar servicios que antes solo estaban disponibles en agencias — incluyendo áreas clave como inversiones, transferencias internacionales y la reprogramación de créditos durante la pandemia.",
           },
           {
             title: "Glass Design — Product Designer",
-            date: "2018 - 2019  |  Peru",
+            date: "2018 - 2019  |  Perú",
             description:
-              "Sole designer of a fast and user-driven team of X members. Established the design system, drove the creation of zero to one products, learning and iterating fast. The goal: make prefab shops life easier.",
+              "Diseñador de producto outsourced para Scotiabank Perú, el único cliente para el que trabajé durante mi tiempo en Glass Design. Después de seis meses, fui contratado directamente por Scotiabank.",
           },
           {
             title: "Urbaner — UX Designer",
-            date: "2018  |  Peru",
+            date: "2018  |  Perú",
             description:
-              "Sole designer. Focused on constant improvements for web and app.",
+              "Único diseñador. Enfocado en mejoras constantes para web y app.",
           },
         ],
       },
       {
-        title: "Education",
+        title: "Educación",
         items: [
           {
-            title: "San Martin de Porres University",
-            date: "2018  |  Peru",
-            description: "Bachelor's Degree in Communication Science",
+            title: "Universidad de San Martín de Porres",
+            date: "2016  |  Perú",
+            description: "Licenciatura en Ciencias de la Comunicación.",
           },
         ],
       },
