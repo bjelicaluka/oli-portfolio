@@ -57,7 +57,7 @@ const content: LandingContent = {
           "⚠️ This project is still in progress. I’m working on the last details before sharing it!",
         image: dogImage,
         projectURL:
-          "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchangelog.com%2Fnews%2Fmake-memes-anywhere-you-can-type-a-url-wgR&psig=AOvVaw0QKsVCrLKiTlsHX6CLiGY7&ust=1751890940508000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi97rucqI4DFQAAAAAdAAAAABAE",
+          "https://drive.google.com/drive/folders/1P19N53cLqwUK1TA-16PefgNSXR0Nt_0W?usp=sharing",
         company: "Personal Project",
       },
     ],
