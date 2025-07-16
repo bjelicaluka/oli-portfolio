@@ -10,7 +10,7 @@ const content: LandingContent = {
   hero: {
     title:
       "Hola, Soy Oli — Diseñador de Producto que ama experimentar para mejorar las cosas.",
-    location: "Lima, Peru",
+    location: "Lima, Perú",
   },
   projects: {
     title: "Lo que hago",
