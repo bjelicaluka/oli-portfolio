@@ -55,8 +55,8 @@ const ItemComponent: FC<Item> = ({ title, date, description }) => {
   return (
     <div className="flex items-start flex-col gap-y-2">
       <h3 className="text-xl lg:text-2xl font-semibold">{title}</h3>
-      <div className="text-sm lg:text-md">{date}</div>
-      <div className="text-sm lg:text-md text-gray-600 dark:text-gray-300">
+      <div className="text-sm lg:text-md font-semibold">{date}</div>
+      <div className="text-sm lg:text-md" style={{ whiteSpace: 'pre-line' }}>
         {description}
       </div>
     </div>

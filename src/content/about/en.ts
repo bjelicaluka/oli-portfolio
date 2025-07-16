@@ -33,7 +33,7 @@ const content: AboutContent = {
             title: "Building Swell - Product Designer",
             date: "2022 - Present  |  United States (remote)",
             description:
-              "Sole designer in a fast-moving, user-driven team of 9. I built the design system from the ground up and led the creation of zero-to-one products — learning and iterating quickly along the way. The goal: to make life easier for prefab shop teams.",
+              "Sole designer in a fast-moving, user-driven team of 9. I built the design system from the ground up and led the creation of zero-to-one products — learning and iterating quickly along the way. The goal: to make life easier for prefab shop teams.\n\nBreak line",
           },
           {
             title: "Scotiabank Peru — Product Designer",
