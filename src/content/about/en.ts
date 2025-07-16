@@ -33,19 +33,19 @@ const content: AboutContent = {
             title: "Building Swell - Product Designer",
             date: "2022 - Present  |  United States (remote)",
             description:
-              "Sole designer in a fast-moving, user-driven team of 9. I built the design system from the ground up and led the creation of zero-to-one products — learning and iterating quickly along the way. The goal: to make life easier for prefab shop teams.\n\nBreak line",
+              "Sole designer at an early-stage construction tech startup building software for prefab manufacturing teams.\n• Designed and shipped multiple zero-to-one tools that help prefab shops track production and manage tasks more efficiently.\n• Created the company’s design system from scratch, speeding up design–dev collaboration and scaling consistency.\n• Led the design of a production tracking module with 80%+ stickiness, becoming a core part of daily shop operations.\n• Joined early and helped shape the product during a phase that led to $3.03M in seed funding (March 2023).",
           },
           {
             title: "Scotiabank Peru — Product Designer",
             date: "2019 - 2022  |  Peru",
             description:
-              "I was part of a multidisciplinary team of over 20 designers, researchers, and service designers at a bank serving more than 1.3 million customers in Peru. My focus was on helping digitize services that had only been available in branches — including core areas like investments, international transfers, and loan rescheduling during the pandemic.",
+              "Part of a multidisciplinary team of 20+ designers and researchers at a bank serving over 1.3 million customers.\n• Contributed to the digitization of key financial services that were previously in-branch only — including international transfers, mutual funds, and stock investments.\n• Helped over 100,000 customers restructure their loans through digital channels during the pandemic.\n• Collaborated on a full redesign of the app and web platforms’ information architecture, contributing to a +10% increase in NPS.",
           },
           {
             title: "Glass Design — Product Designer",
             date: "2018 - 2019  |  Peru",
             description:
-              "Worked as an outsourced Product Designer for Scotiabank Peru — the sole client I supported during my time at Glass Design. After six months of collaboration, I was hired directly by Scotiabank as a full-time Product Designer.",
+              "Worked as an outsourced Product Designer for Scotiabank Peru — the sole client I supported during my time at Glass Design. After six months of collaboration, I was hired directly by Scotiabank as a full-time employee.",
           },
           {
             title: "Urbaner — UX Designer",
